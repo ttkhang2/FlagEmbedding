@@ -14,7 +14,7 @@ from .modeling import CrossEncoder
 from .trainer import CETrainer
 
 logger = logging.getLogger(__name__)
-
+logging.disable(logging.WARNING)
 
 def main():
     parser = HfArgumentParser((ModelArguments, DataArguments, TrainingArguments))
